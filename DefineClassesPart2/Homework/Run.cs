@@ -34,7 +34,7 @@
             Console.WriteLine(list.Access(0));
             Console.WriteLine(list.Access(1));
             Console.WriteLine(list.Access(2));
-            Console.WriteLine(list.FindByValue(2));            // FindByValue
+            Console.WriteLine(list.FindByValue(6));            // FindByValue
 
 
             Console.WriteLine(list.Min());                     // MIn
