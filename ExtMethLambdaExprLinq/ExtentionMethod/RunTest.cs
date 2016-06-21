@@ -23,8 +23,9 @@
             test2[2] = 21;
             Console.WriteLine("Sum of this collection is: " + IEnumerableExtantions.Sum(test2));
             Console.WriteLine("Max ellement of this collection is: " + IEnumerableExtantions.Max(test2) + "\n");
-            Console.WriteLine("Ellement divisible by 3 and 7 of this collection is:"); 
+            Console.WriteLine("Ellement divisible by 3 and 7 of this collection is:");   //problem6
             IEnumerableExtantions.numsInArrayDivisBy3and7(test2);
+            IEnumerableExtantions.numsInArrayDivisBy3and7LAMBDA(test2);
             // test Student, ClassOfStudents
             var ceco = new Student("Tsvetan", "Angov","ceco@gmail.com","0888123456",1,24);
             var ivancho = new Student("Ivan", "Ivanov", "ivancho@gmail.com", "0888333333", 2, 20);

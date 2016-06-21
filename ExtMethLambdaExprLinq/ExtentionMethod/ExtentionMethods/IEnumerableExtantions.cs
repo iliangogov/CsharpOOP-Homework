@@ -78,11 +78,21 @@ namespace ExtentionMethod
             return max;
         }
       
-        public static void numsInArrayDivisBy3and7(int[]arr)
+        public static void numsInArrayDivisBy3and7(int[]arr) //LINQ
         {
             var output = arr
                .Where(number => number % 7 == 0 && number % 3 == 0)
                .ToArray();
+
+            Console.WriteLine(string.Join(", ", output));
+        }
+
+        public static void numsInArrayDivisBy3and7LAMBDA(int[] arr) //Lamda
+        {
+            var output = from num in arr
+                         where num%7==0 &&num%3==0
+                         select num;
+
 
             Console.WriteLine(string.Join(", ", output));
         }
