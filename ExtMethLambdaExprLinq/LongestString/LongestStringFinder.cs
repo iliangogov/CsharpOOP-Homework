@@ -1,6 +1,7 @@
 ﻿namespace LongestString
 {
     using System.Linq;
+
     public class LongestStringFinder
     {
         public LongestStringFinder()

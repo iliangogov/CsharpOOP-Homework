@@ -2,7 +2,7 @@
 {
     using System;
 
-    class TestLongestString
+    class RunTest
     {
         static void Main()
         {

@@ -15,10 +15,12 @@ namespace ExtentionMethod
         private int group;
         private int fn;
         private int age;
-        private List<int> marks;
+        private List<int> marks; 
 
-        // private List<Courses> courses;
+            public Student()
+        {
 
+        }
         public Student(string firstname, string lastname,string email="not set",string phonenumber= "not set", int group=0,int age=0,int fn=0)
         {
             this.firstName = firstname;
@@ -126,6 +128,36 @@ namespace ExtentionMethod
 
             }
         }
+
+        public List<int> Marks
+        {
+            get
+            {
+                return this.marks;
+            }
+            set
+            {
+                this.marks = value;
+            }
+        }
+
+        public int FN
+        {
+            get
+            {
+                return this.fn;
+            }
+            set
+            {
+                if (value != 8)
+                {
+                    throw new ArgumentException("Value must be 8 digits long");
+                }
+
+                this.fn = value;
+            }
+        }
+
 
         public override string ToString()
         {

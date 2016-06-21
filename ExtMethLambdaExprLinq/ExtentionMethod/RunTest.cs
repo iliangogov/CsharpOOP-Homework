@@ -25,15 +25,15 @@
             IEnumerableExtantions.numsInArrayDivisBy3and7(test2);
             IEnumerableExtantions.numsInArrayDivisBy3and7LAMBDA(test2);
             // test Student, ClassOfStudents
-            var ceco = new Student("Tsvetan", "Angov","ceco@gmail.com","0888123456",1,24);
-            var ivancho = new Student("Ivan", "Ivanov", "ivancho@gmail.com", "0888333333", 2, 20);
+            var ceco = new Student("Tsvetan", "Angov","ceco@gmail.com","0888123456",2,24);
+            var ivancho = new Student("Ivan", "Ivanov", "ivancho@gmail.com", "0888333333", 1, 20);
             var studentClass = new ClassOfStudents();
             studentClass.AddStudent(ceco);
             studentClass.AddStudent(ivancho);
             Console.WriteLine("//Students with First name before lastname alphabeticaly:\n"+studentClass.FirstBeforeLast());   //problem3
             Console.WriteLine("//by AgeInRange 18-24:\n"+studentClass.AgeRange());          //problem4
             Console.WriteLine("//StudentClass sort by name descending:\n"+ studentClass.SortByNameDescending()); // problem5
-           
+            Console.WriteLine("//Students ordered by GroupNumber:\n"+studentClass.GroupByGroupNumber());
         }
     }
 }

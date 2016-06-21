@@ -83,6 +83,17 @@ namespace ExtentionMethod.Students
             }
             return output;
         }
+
+        public string GroupByGroupNumber()
+        {
+            string output = "";
+            var ordered = this.classOfStudents.OrderBy(x => x.Group);
+            foreach (var s in ordered)
+            {
+                output += s.ToString();
+            }
+            return output;
+        }
         
         public IEnumerator GetEnumerator()
         {
