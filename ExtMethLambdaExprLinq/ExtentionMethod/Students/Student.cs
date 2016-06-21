@@ -13,14 +13,13 @@ namespace ExtentionMethod
         private string eMail;
         private string phoneNumber;
         private int group;
-        //private int fn;
+        private int fn;
         private int age;
-
-       // private List<int> marks;
+        private List<int> marks;
 
         // private List<Courses> courses;
 
-        public Student(string firstname, string lastname,string email="not set",string phonenumber= "not set", int group=0,int age=0)
+        public Student(string firstname, string lastname,string email="not set",string phonenumber= "not set", int group=0,int age=0,int fn=0)
         {
             this.firstName = firstname;
             this.lastName = lastname;
@@ -28,6 +27,7 @@ namespace ExtentionMethod
             this.phoneNumber = phonenumber;
             this.group = group;
             this.age = age;
+            this.fn = fn;
 
         }
 

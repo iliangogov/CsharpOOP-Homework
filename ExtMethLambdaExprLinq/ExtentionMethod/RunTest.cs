@@ -2,10 +2,8 @@
 {
     using System;
     using System.Text;
-    using System.Collections;
-    using System.Collections.Generic;
     using Students;
-
+   
     class RunTest
     {
         static void Main()
@@ -35,7 +33,7 @@
             Console.WriteLine("//Students with First name before lastname alphabeticaly:\n"+studentClass.FirstBeforeLast());   //problem3
             Console.WriteLine("//by AgeInRange 18-24:\n"+studentClass.AgeRange());          //problem4
             Console.WriteLine("//StudentClass sort by name descending:\n"+ studentClass.SortByNameDescending()); // problem5
-            
+           
         }
     }
 }
