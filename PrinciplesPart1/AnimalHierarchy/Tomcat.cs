@@ -2,23 +2,23 @@
 {
     using System;
 
-    class Tomcat:Cat
+    class Tomcat : Cat
     {
         private Sex sexType;
 
-        public Sex SexType
+        public new Sex SexType
         {
             get
             {
                 return this.sexType;
             }
-           private set
+            private set
             {
                 this.sexType = Animals.Sex.male;
             }
         }
 
-        public void Sound()
+        public new void Sound()
         {
             Console.WriteLine("I make a specifyc sound: Mrrr!");
         }

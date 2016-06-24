@@ -2,9 +2,9 @@
 {
     using System;
 
-   public class Frog : Animals
+    public class Frog : Animals
     {
-        public void Sound()
+        public new void Sound()
         {
             Console.WriteLine("I make a specifyc sound: Kwaaak!");
         }

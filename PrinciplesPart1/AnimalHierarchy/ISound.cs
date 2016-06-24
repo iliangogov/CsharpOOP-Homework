@@ -2,6 +2,6 @@
 {
     interface ISound
     {
-        void Sound();      
+        void Sound();
     }
 }

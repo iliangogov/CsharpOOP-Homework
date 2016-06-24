@@ -2,11 +2,11 @@
 {
     using System;
 
-    class Kitten:Cat
+    class Kitten : Cat
     {
         private Sex sexType;
 
-        public Sex SexType
+        public new Sex SexType
         {
             get
             {
@@ -18,7 +18,7 @@
             }
         }
 
-        public void Sound()
+        public new void Sound()
         {
             Console.WriteLine("I make a specifyc sound: Pisss!");
         }

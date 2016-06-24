@@ -4,11 +4,11 @@
 
     public abstract class Animals : ISound
     {
-        public string Name { get;}
+        public string Name { get; }
         public int Age { get; }
         public Sex SexType { get; }
 
-        public Animals(string name,int age,Sex sex)
+        public Animals(string name, int age, Sex sex)
         {
             this.Name = name;
             this.Age = age;

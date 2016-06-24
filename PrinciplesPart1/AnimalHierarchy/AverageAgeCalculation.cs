@@ -1,12 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AnimalHierarchy
+﻿namespace AnimalHierarchy
 {
-    class AverageAgeCalculation
+    using System.Collections.Generic;
+    using System.Linq;
+
+    public class AverageAgeCalculation
     {
+        public double listToCalculate(List<Animals> target)
+        {
+            double average = 0;
+            double sum = 0;
+            double length = target.Count;
+            var temp = target.Select(x => x.Age).ToArray();
+            foreach (var age in temp)
+            {
+                sum += age;
+            }
+            average = sum / length;
+            return average;
+        }
     }
 }

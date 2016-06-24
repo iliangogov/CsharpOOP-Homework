@@ -2,7 +2,7 @@
 {
     using System;
 
-    class Dog:Animals
+    public class Dog : Animals
     {
         public new void Sound()
         {
