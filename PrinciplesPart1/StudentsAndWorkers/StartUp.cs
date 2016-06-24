@@ -79,7 +79,21 @@
             {
                 Console.WriteLine("{0} {1} {2}", worker.FirstName, worker.LastName, worker.MoneyPerHour());
             }
+            Console.WriteLine("=======================================");
+            //Merge the lists and sort them by first name and last name.
+            var mergedList = new List<Human>();
 
+            mergedList.AddRange(students);
+            mergedList.AddRange(workers);
+            var sortedMergedList =
+                (from human in mergedList
+                 orderby human.FirstName
+                 orderby human.LastName
+                 select human).ToList();
+            foreach (var human in sortedMergedList)
+            {
+                Console.WriteLine("{0} {1}", human.FirstName, human.LastName);
+            }
         }
     }
 }
