@@ -47,17 +47,17 @@
             List<Worker> workers = new List<Worker>();
             #region generate new students and add them in the list
 
-            var fiki   =new Worker("Fikret", "Fikretov",300,8);
-            var abi  =new Worker("Abdul", "Abdulov",250,6);
-            var gencho  =new Worker("Gencho", "Genchev",180, 6);
-            var bugi =new Worker("Bugi", "Barabov",450, 9);
-            var ceco =new Worker("Cvetan", "Cvetanov",360, 10);
-            var velik  =new Worker("Velik", "Velikov",270, 11);
-            var gibi =new Worker("Gibon", "Gibonov",500, 5);
-            var djeki    =new Worker("Djeki", "Djekov",160, 4);
-            var puhi =new Worker("Asparuh", "Asparuhov",140, 3);
+            var fiki = new Worker("Fikret", "Fikretov", 300, 8);
+            var abi = new Worker("Abdul", "Abdulov", 250, 6);
+            var gencho = new Worker("Gencho", "Genchev", 180, 6);
+            var bugi = new Worker("Bugi", "Barabov", 450, 9);
+            var ceco = new Worker("Cvetan", "Cvetanov", 360, 10);
+            var velik = new Worker("Velik", "Velikov", 270, 11);
+            var gibi = new Worker("Gibon", "Gibonov", 500, 5);
+            var djeki = new Worker("Djeki", "Djekov", 160, 4);
+            var puhi = new Worker("Asparuh", "Asparuhov", 140, 3);
             var toncho = new Worker("Toncho", "Tokmakchiev", 200, 8);
-               
+
             workers.Add(fiki);
             workers.Add(abi);
             workers.Add(gencho);
@@ -71,7 +71,7 @@
 
             #endregion
             var sortedWorkers =
-               ( from worker in workers
+               (from worker in workers
                 orderby worker.MoneyPerHour() descending
                 select worker).ToList();
 

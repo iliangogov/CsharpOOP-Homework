@@ -4,7 +4,7 @@
     {
         private int classNumber;
 
-        public Student(string name):base(name)
+        public Student(string name) : base(name)
         {
             this.classNumber = ClassNumber;
         }

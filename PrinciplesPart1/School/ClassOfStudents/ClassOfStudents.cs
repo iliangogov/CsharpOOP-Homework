@@ -7,7 +7,7 @@
         private List<Teacher> setOfTeachers;
         private string textIdentifier;
         private string comment;
-        
+
         public ClassOfStudents(string textIdentifier, Teacher teacher)
         {
             this.textIdentifier = textIdentifier;
@@ -40,6 +40,6 @@
         {
             this.setOfTeachers.Add(teacher);
         }
-        
+
     }
 }

@@ -12,7 +12,7 @@
             ivanov.AddDisciplines(math);
             ivanov.AddDisciplines(english);
             ClassOfStudents clasA = new ClassOfStudents("1A", ivanov);
-           
+
         }
     }
 }
