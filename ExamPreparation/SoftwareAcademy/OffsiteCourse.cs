@@ -17,6 +17,7 @@
 
             set
             {
+                Validator.StringIsEmpty(value);
                 this.town = value;
             }
         }

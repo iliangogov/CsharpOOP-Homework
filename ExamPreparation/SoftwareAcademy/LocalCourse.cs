@@ -16,6 +16,7 @@
 
             set
             {
+                Validator.StringIsEmpty(value);
                 this.lab = value;
             }
         }

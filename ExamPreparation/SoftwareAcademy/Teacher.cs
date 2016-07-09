@@ -20,6 +20,7 @@
 
             set
             {
+                Validator.StringIsEmpty(value);
                 this.name = value;
             }
         }
@@ -27,11 +28,16 @@
         public string Courses
         {
             get { return string.Join(", ", this.courses); }
-            set { this.courses.Append(value); }
+            set
+            {
+                Validator.StringIsEmpty(value);
+                this.courses.Append(value);
+            }
         }
 
         public void AddCourse(ICourse course)
         {
+            Validator.ObjeIsNull(course);
             this.courses.Append(course.Name);
         }
 
