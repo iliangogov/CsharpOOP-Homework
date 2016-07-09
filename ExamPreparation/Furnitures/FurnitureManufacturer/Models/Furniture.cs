@@ -43,7 +43,7 @@ namespace FurnitureManufacturer.Models
         {
             get
             {
-                return this.MaterialType.ToString();
+                return this.MaterialType;
             }
         }
 
