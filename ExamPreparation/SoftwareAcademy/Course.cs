@@ -22,6 +22,7 @@
 
             set
             {
+                Validator.StringIsEmpty(value);
                 this.name = value;
             }
         }
@@ -35,6 +36,7 @@
 
             set
             {
+                Validator.ObjeIsNull(value);
                 this.teacher = value;
             }
         }
