@@ -1,7 +1,6 @@
 ﻿namespace TimerTask
 {
     using System;
-    using System.Threading;
 
     public delegate void Ticker();
     public class Timer

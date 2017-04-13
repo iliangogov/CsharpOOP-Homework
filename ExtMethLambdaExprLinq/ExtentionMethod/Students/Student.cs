@@ -1,12 +1,11 @@
-﻿using System;
+﻿using ExtentionMethod.Contracts;
+using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace ExtentionMethod
 {
-    public class Student 
+    public class Student :IStudent
     {
         private string firstName;
         private string lastName;
@@ -15,13 +14,13 @@ namespace ExtentionMethod
         private int group;
         private int fn;
         private int age;
-        private List<int> marks; 
+        private List<int> marks;
 
-            public Student()
+        public Student()
         {
-
         }
-        public Student(string firstname, string lastname,string email="not set",string phonenumber= "not set", int group=0,int age=0,int fn=0)
+
+        public Student(string firstname, string lastname, string email = "not set", string phonenumber = "not set", int group = 0, int age = 0, int fn = 0)
         {
             this.firstName = firstname;
             this.lastName = lastname;
@@ -49,7 +48,7 @@ namespace ExtentionMethod
             }
         }
 
-             public string LastName
+        public string LastName
         {
             get { return this.lastName; }
             set
@@ -103,7 +102,7 @@ namespace ExtentionMethod
             set
             {
 
-                if (value<1||value>3)
+                if (value < 1 || value > 3)
                 {
                     throw new ArgumentException("We have groups 1,2 and 3.Choose one of them");
                 }

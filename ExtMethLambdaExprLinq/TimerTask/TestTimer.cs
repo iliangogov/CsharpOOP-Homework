@@ -7,14 +7,15 @@
     {
         static void Main()
         {
-            var ticker = new Ticker(Timer.Action);
-            int counter = 10;
-            while (counter > 0)
+            //var ticker = new Ticker(Timer.Action);
+            int counter = 0;
+            while (counter <= 10)
             {
-                ticker();
+                // ticker();
+                Console.WriteLine(counter);
                 Thread.Sleep(1000);
                 Console.Clear();
-                counter--;
+                counter++;
             }
         }
     }
