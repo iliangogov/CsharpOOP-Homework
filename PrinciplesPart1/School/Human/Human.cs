@@ -33,5 +33,7 @@
                 this.name = value;
             }
         }
+
+        public abstract void Talk();
     }
 }

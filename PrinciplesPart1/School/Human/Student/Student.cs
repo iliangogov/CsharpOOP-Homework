@@ -20,5 +20,10 @@
                 this.classNumber = value;
             }
         }
+
+        public override void Talk()
+        {
+            System.Console.WriteLine("I can talk cause I'm Student kind of Human!");
+        }
     }
 }

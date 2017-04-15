@@ -1,5 +1,6 @@
 ﻿namespace School
 {
+    using System;
     using System.Collections.Generic;
 
     public class Teacher : Human
@@ -22,5 +23,9 @@
             this.setOfDisciplines.Add(disciplineType);
         }
 
+        public override void Talk()
+        {
+            Console.WriteLine("I can talk like a Teacher!");
+        }
     }
 }
