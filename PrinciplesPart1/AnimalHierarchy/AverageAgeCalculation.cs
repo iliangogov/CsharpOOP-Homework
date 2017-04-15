@@ -5,7 +5,7 @@
 
     public class AverageAgeCalculation
     {
-        public double listToCalculate(List<Animals> target)
+        public double listToCalculate(List<Animal> target)
         {
             double average = 0;
             double sum = 0;

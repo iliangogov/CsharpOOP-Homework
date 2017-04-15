@@ -14,12 +14,19 @@
             }
             private set
             {
-                this.sexType = Animals.Sex.female;
+                this.sexType = Animal.Sex.female;
             }
         }
 
-        public new void Sound()
+        //Without polymorphism
+        //public new void Sound()
+        //{
+        //    Console.WriteLine("I make a specifyc sound: Pisss!");
+        //}
+
+        public override void Sound()
         {
+            base.Sound();
             Console.WriteLine("I make a specifyc sound: Pisss!");
         }
     }

@@ -2,10 +2,17 @@
 {
     using System;
 
-    public class Frog : Animals
+    public class Frog : Animal
     {
-        public new void Sound()
+        //Without polymorphism
+        //public new void Sound()
+        //{
+        //    Console.WriteLine("I make a specifyc sound: Kwaaak!");
+        //}
+
+        public override void Sound()
         {
+            base.Sound();
             Console.WriteLine("I make a specifyc sound: Kwaaak!");
         }
     }

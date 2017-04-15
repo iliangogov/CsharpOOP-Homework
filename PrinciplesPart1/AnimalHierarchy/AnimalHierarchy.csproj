@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Animals.cs" />
+    <Compile Include="Animal.cs" />
     <Compile Include="AverageAgeCalculation.cs" />
     <Compile Include="Cat.cs" />
     <Compile Include="Dog.cs" />

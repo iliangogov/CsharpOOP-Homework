@@ -2,24 +2,24 @@
 {
     using System;
 
-    public abstract class Animals : ISound
+    public abstract class Animal : ISound
     {
         public string Name { get; }
         public int Age { get; }
         public Sex SexType { get; }
 
-        public Animals(string name, int age, Sex sex)
+        public Animal(string name, int age, Sex sex)
         {
             this.Name = name;
             this.Age = age;
             this.SexType = sex;
         }
 
-        public Animals()
+        public Animal()
         {
         }
 
-        public void Sound()
+        public virtual void Sound()
         {
             Console.WriteLine("I can make a sound");
         }

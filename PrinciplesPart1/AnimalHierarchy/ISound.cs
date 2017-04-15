@@ -1,6 +1,6 @@
 ﻿namespace AnimalHierarchy
 {
-    interface ISound
+    public interface ISound
     {
         void Sound();
     }

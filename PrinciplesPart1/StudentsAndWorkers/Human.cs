@@ -1,11 +1,11 @@
 ﻿namespace StudentsAndWorkers
 {
-   public abstract class Human
+    public abstract class Human
     {
         private string firstName;
         private string lastName;
 
-        public Human(string firstname,string lastname)
+        public Human(string firstname, string lastname)
         {
             this.firstName = firstname;
             this.lastName = lastname;
@@ -34,10 +34,5 @@
                 this.lastName = value;
             }
         }
-
-        //public override string ToString()
-        //{
-        //    return base.ToString();
-        //}
     }
 }
